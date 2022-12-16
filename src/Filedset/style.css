@@ -1,0 +1,11 @@
+.fieldset {
+    border: 2px solid purple;
+    border-radius: 15px;
+}
+
+.fieldset__legend {
+    background-color: purple;
+    padding: 9px;
+    border-radius: 15px;
+    color: white;
+}

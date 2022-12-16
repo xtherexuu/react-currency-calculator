@@ -1,0 +1,24 @@
+.section {
+    background-color: white;
+    width: 80%;
+    opacity: 0.95;
+    padding: 50px 30px 0;
+    border-radius: 15px;
+    box-shadow: 0px 0px 55px 26px rgba(232, 92, 255, 1);
+    min-height: 524px;
+}
+
+@media (max-width: 300px) {
+    .section {
+        width: 90%;
+    }
+}
+
+.section__subheader {
+    text-align: center;
+    font-size: 35px;
+    letter-spacing: 4px;
+    border-bottom: 3px solid purple;
+    padding-bottom: 10px;
+    margin: 0 10% 20px;
+}
