@@ -1,15 +1,29 @@
 import "./style.css";
 
-const Filedset = ({ SelectValue, InputAmount }) => (
+const Filedset = ({
+    currency,
+    setCurrency,
+    exchangedCurrency,
+    setExchangedCurrency,
+    setValue,
+    value,
+    SelectValue,
+    InputAmount,
+}) => (
     <fieldset className="fieldset">
-        <legend class="fieldset__legend">Przelicznik</legend>
+        <legend className="fieldset__legend">Przelicznik</legend>
         <p>
-            <SelectValue />
+            <SelectValue
+                currency={currency}
+                setCurrency={setCurrency}
+                exchangedCurrency={exchangedCurrency}
+                setExchangedCurrency={setExchangedCurrency}
+            />
         </p>
         <p>
-            <InputAmount />
+            <InputAmount setValue={setValue} value={value} />
         </p>
-        <p>Kurs aktualny w dniu: 13.12.2022r.</p>
+        <p>Kurs aktualny w dniu: 16.12.2022r.</p>
     </fieldset>
 );
 

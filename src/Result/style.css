@@ -1,0 +1,15 @@
+.result__paragraph {
+  text-align: center;
+  font-size: 17px;
+  letter-spacing: 1px;
+  word-break: break-word;
+}
+
+.result__paragraph--explain {
+  font-size: 20px;
+  word-break: break-word;
+}
+
+.result__paragraph--hidden {
+  display: none;
+}
