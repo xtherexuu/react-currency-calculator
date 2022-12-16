@@ -1,6 +1,6 @@
 import "./style.css";
 
-const Filedset = ({SelectValue, InputAmount}) => (
+const Filedset = ({ SelectValue, InputAmount }) => (
     <fieldset className="fieldset">
         <legend class="fieldset__legend">Przelicznik</legend>
         <p>

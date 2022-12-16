@@ -21,7 +21,9 @@ function App() {
                         Po przeliczenniu otrzymasz: <strong class="section__strong js-resoult">sdfsdf</strong>
                     </p>
                     <p className="section__paragraph section__paragraph--explain">
-                        <strong class="js-explanationResoult">252352sdfsddddddddddddddddddddddddddddddddddddddddddddd52</strong>
+                        <strong class="js-explanationResoult">
+                            252352sdfsddddddddddddddddddddddddddddddddddddddddddddd52
+                        </strong>
                     </p>
                 </Section>
             </Wrapper>
