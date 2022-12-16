@@ -46,9 +46,6 @@ function App() {
     };
 
     const calculator = () => {
-        console.log(inputCurrencyRate());
-        console.log(outputCurrencyRate());
-
         return (+inputCurrencyRate() * +value) / +outputCurrencyRate();
     };
 
