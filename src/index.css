@@ -12,15 +12,3 @@ html {
   background-repeat: repeat-y;
   background-size: cover;
 }
-
-.section__paragraph {
-  text-align: center;
-  font-size: 17px;
-  letter-spacing: 1px;
-  word-break: break-word;
-}
-
-.section__paragraph--explain {
-  font-size: 20px;
-  word-break: break-word;
-}
