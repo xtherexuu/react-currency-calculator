@@ -4,7 +4,11 @@ const Select = ({ currency, setCurrency, exchangedCurrency, setExchangedCurrency
     <>
         <label className="label">
             Wybierz walutę z:&nbsp;
-            <select value={currency} onChange={(event) => setCurrency(event.target.value)} className="select">
+            <select
+                value={currency}
+                onChange={(event) => setCurrency(event.target.value)}
+                className="select"
+            >
                 <option>PLN</option>
                 <option>EUR</option>
                 <option>USD</option>
