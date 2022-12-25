@@ -6,8 +6,6 @@ import Section from "./Section";
 import Form from "./Form";
 import SelectValue from "./Select";
 import InputAmount from "./Input";
-import Filedset from "./Filedset";
-import Button from "./Button";
 import Result from "./Result";
 
 function App() {
@@ -63,19 +61,26 @@ function App() {
             <Video />
             <Wrapper>
                 <Section>
-                    <Form
-                        onFormSubmit={onFormSubmit}
-                        currency={currency}
-                        setCurrency={setCurrency}
-                        exchangedCurrency={exchangedCurrency}
-                        setExchangedCurrency={setExchangedCurrency}
-                        setValue={setValue}
-                        value={value}
-                        SelectValue={SelectValue}
-                        InputAmount={InputAmount}
-                        Filedset={Filedset}
-                        Button={Button}
-                    />
+                    <Form onFormSubmit={onFormSubmit}>
+                        <fieldset className="fieldset">
+                            <legend className="fieldset__legend">Przelicznik</legend>
+                            <p>
+                                <SelectValue
+                                    currency={currency}
+                                    setCurrency={setCurrency}
+                                    exchangedCurrency={exchangedCurrency}
+                                    setExchangedCurrency={setExchangedCurrency}
+                                />
+                            </p>
+                            <p>
+                                <InputAmount setValue={setValue} value={value} />
+                            </p>
+                            <p>Kurs aktualny w dniu: 16.12.2022r.</p>
+                        </fieldset>
+                        <p>
+                            <button className="form__button">Przelicz</button>
+                        </p>
+                    </Form>
                     <Result
                         result={result}
                         outputCurrency={outputCurrency}
