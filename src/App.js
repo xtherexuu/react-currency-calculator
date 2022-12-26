@@ -1,4 +1,4 @@
-import React from "react";
+import { useState } from "react";
 import Header from "./Header";
 import Video from "./Video";
 import Wrapper from "./Wrapper";
@@ -9,13 +9,13 @@ import InputAmount from "./Input";
 import Result from "./Result";
 
 function App() {
-    const [value, setValue] = React.useState("");
-    const [currency, setCurrency] = React.useState("PLN");
-    const [exchangedCurrency, setExchangedCurrency] = React.useState("EUR");
-    const [result, setResult] = React.useState("");
-    const [amount, setAmount] = React.useState("");
-    const [inputCurrency, setInputCurrency] = React.useState(currency);
-    const [outputCurrency, setOutputCurrency] = React.useState(exchangedCurrency);
+    const [value, setValue] = useState("");
+    const [currency, setCurrency] = useState("PLN");
+    const [exchangedCurrency, setExchangedCurrency] = useState("EUR");
+    const [result, setResult] = useState("");
+    const [amount, setAmount] = useState("");
+    const [inputCurrency, setInputCurrency] = useState(currency);
+    const [outputCurrency, setOutputCurrency] = useState(exchangedCurrency);
 
     const inputCurrencyRate = () => {
         switch (currency) {
@@ -56,7 +56,7 @@ function App() {
     };
 
     return (
-        <React.Fragment>
+        <>
             <Header />
             <Video />
             <Wrapper>
@@ -91,7 +91,7 @@ function App() {
                     />
                 </Section>
             </Wrapper>
-        </React.Fragment>
+        </>
     );
 }
 
