@@ -75,7 +75,9 @@ function App() {
                             <p>
                                 <InputAmount setValue={setValue} value={value} />
                             </p>
-                            <p className="filedset__paragraph">Kurs aktualny w dniu: 16.12.2022r.</p>
+                            <p className="filedset__paragraph">
+                                Kurs aktualny w dniu: 16.12.2022r.
+                            </p>
                         </fieldset>
                         <p>
                             <button className="form__button">Przelicz</button>
