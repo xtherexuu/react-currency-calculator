@@ -1,7 +1,7 @@
 import "./style.css";
 
 const Input = ({ setValue, value }) => (
-    <label className="label">
+    <label className="input__label">
         Ilość:&nbsp;
         <input
             value={value}

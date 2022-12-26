@@ -2,7 +2,7 @@ import "./style.css";
 
 const Select = ({ currency, setCurrency, exchangedCurrency, setExchangedCurrency }) => (
     <>
-        <label className="label">
+        <label className="select__label">
             Wybierz walutę z:&nbsp;
             <select
                 value={currency}

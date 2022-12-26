@@ -8,7 +8,7 @@
     min-height: 524px;
 }
 
-@media (max-width: 300px) {
+@media (max-width: 335px) {
     .section {
         width: 90%;
     }

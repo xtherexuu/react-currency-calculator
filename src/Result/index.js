@@ -4,7 +4,7 @@ const Result = ({ result, inputCurrency, outputCurrency, amount }) => (
     <>
         <p className={`result__paragraph${result ? "" : " result__paragraph--hidden"}`}>
             Po przeliczenniu otrzymasz:{" "}
-            <strong className="result__strong js-resoult">
+            <strong className="result__strong">
                 {result} {outputCurrency}
             </strong>
         </p>
@@ -13,8 +13,11 @@ const Result = ({ result, inputCurrency, outputCurrency, amount }) => (
                 result ? "" : " result__paragraph--hidden"
             }`}
         >
-            <strong className="js-explanationResoult">
-                {amount} {inputCurrency} = {result} {outputCurrency}
+            <strong className="explanationResult">
+                {amount} {inputCurrency} ={" "}
+                <span className="explanationResult--finalResult">
+                    {result} {outputCurrency}
+                </span>
             </strong>
         </p>
     </>

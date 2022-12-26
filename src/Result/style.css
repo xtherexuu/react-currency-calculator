@@ -13,3 +13,11 @@
 .result__paragraph--hidden {
   display: none;
 }
+
+.result__strong {
+  color: purple;
+}
+
+.explanationResult--finalResult {
+  color: purple;
+}

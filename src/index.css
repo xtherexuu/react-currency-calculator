@@ -37,3 +37,7 @@ html {
   border-radius: 15px;
   color: white;
 }
+
+.filedset__paragraph {
+  font-size: 18px;
+}
