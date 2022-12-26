@@ -8,6 +8,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ![Prewiev of working my project](previewCurrencyCalculator.gif)
 
+## DEMO:
+- https://xtherexuu.github.io/react-currency-calculator/
+
 ## Technologies
 
 - HTML
