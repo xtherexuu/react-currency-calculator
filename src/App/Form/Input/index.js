@@ -1,11 +1,11 @@
 import "./style.css";
 
-const Input = ({ setValue, value }) => (
+const Input = ({ amount, setAmount }) => (
     <label className="input__label">
         Ilość:&nbsp;
         <input
-            value={value}
-            onChange={(event) => setValue(event.target.value)}
+            value={amount}
+            onChange={(event) => setAmount(event.target.value)}
             className="input"
             required
             type="number"

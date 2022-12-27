@@ -1,0 +1,28 @@
+.form__button {
+    background-color: purple;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 15px;
+    color: white;
+    transition: 1s;
+  }
+  
+  .form__button:hover {
+    background-color: hsl(300, 100%, 35%);
+  }
+  
+  .fieldset {
+    border: 2px solid purple;
+    border-radius: 15px;
+  }
+  
+  .fieldset__legend {
+    background-color: purple;
+    padding: 9px;
+    border-radius: 15px;
+    color: white;
+  }
+  
+  .filedset__paragraph {
+    font-size: 18px;
+  }

@@ -1,22 +1,22 @@
 import "./style.css";
 
-const Result = ({ result, inputCurrency, outputCurrency, amount }) => (
+const Result = ({result}) => (
     <>
-        <p className={`result__paragraph${result ? "" : " result__paragraph--hidden"}`}>
+        <p className={`result__paragraph${result.exchangedAmount ? "" : " result__paragraph--hidden"}`}>
             Po przeliczenniu otrzymasz:{" "}
             <strong className="result__strong">
-                {result} {outputCurrency}
+                {result.exchangedAmount} {result.outputCurrency}
             </strong>
         </p>
         <p
             className={`result__paragraph result__paragraph--explain${
-                result ? "" : " result__paragraph--hidden"
+                result.exchangedAmount ? "" : " result__paragraph--hidden"
             }`}
         >
             <strong className="explanationResult">
-                {amount} {inputCurrency} ={" "}
+                {result.amount} {result.inputCurrency} ={" "}
                 <span className="explanationResult--finalResult">
-                    {result} {outputCurrency}
+                    {result.exchangedAmount} {result.outputCurrency}
                 </span>
             </strong>
         </p>
