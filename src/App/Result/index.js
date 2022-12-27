@@ -1,8 +1,12 @@
 import "./style.css";
 
-const Result = ({result}) => (
+const Result = ({ result }) => (
     <>
-        <p className={`result__paragraph${result.exchangedAmount ? "" : " result__paragraph--hidden"}`}>
+        <p
+            className={`result__paragraph${
+                result.exchangedAmount ? "" : " result__paragraph--hidden"
+            }`}
+        >
             Po przeliczenniu otrzymasz:{" "}
             <strong className="result__strong">
                 {result.exchangedAmount} {result.outputCurrency}
