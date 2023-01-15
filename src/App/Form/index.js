@@ -42,7 +42,7 @@ const Form = ({ result, setResult }) => {
                 <p>
                     <InputAmount amount={amount} setAmount={setAmount} currencies={currencies} />
                 </p>
-                <p className="filedset__paragraph">Kurs aktualny w dniu: 27.12.2022r.</p>
+                <p className="filedset__paragraph">Kurs aktualny w dniu: 15.01.2023r.</p>
             </fieldset>
             <p>
                 <button className="form__button">Przelicz</button>
