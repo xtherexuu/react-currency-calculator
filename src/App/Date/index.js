@@ -18,7 +18,7 @@ const CurrentDate = () => {
         <div className="dateContainer">
             <p className="date">
                 Dziś jest{" "}
-                {date.toLocaleString("pl", {
+                {date.toLocaleString(undefined, {
                     weekday: "long",
                     day: "numeric",
                     month: "long",
